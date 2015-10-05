@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Mx.Amib.Sistemas.Credencializacion.Properties;
 
 namespace Mx.Amib.Sistemas.Credencializacion.Views
 {
@@ -15,8 +16,11 @@ namespace Mx.Amib.Sistemas.Credencializacion.Views
         public MainForm()
         {
             InitializeComponent();
+            
+            //utiliza el icono del archivo de recursos
+            this.Icon = Resources.IconoAplicacion;
+            //expande todo el menú del arbol
             this.tvwSideMenu.ExpandAll();
-
             //inicializa el listado de imagenes para el menu obtienendolas de los resources
             this.imglSideMenu.Images.Add("Default", Properties.Resources.MenuIconDefault);
             this.imglSideMenu.Images.Add("Sustentantes", Properties.Resources.MenuIconSustentantes);
@@ -40,7 +44,19 @@ namespace Mx.Amib.Sistemas.Credencializacion.Views
 
         private void tvwSideMenu_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            string selectedMenu = (string)e.Node.Tag;
 
+            this.sustentantesUserControl.Visible = false;
+            this.printerQueueUserControl.Visible = false;
+
+            if (selectedMenu == "Sustentantes")
+            {
+                this.sustentantesUserControl.Visible = true;
+            }
+            else if (selectedMenu == "PrinterQueue")
+            {
+                this.printerQueueUserControl.Visible = true;
+            }
         }
     }
 }

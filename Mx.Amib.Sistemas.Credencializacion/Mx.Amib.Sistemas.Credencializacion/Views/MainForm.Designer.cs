@@ -42,23 +42,27 @@
             treeNode5,
             treeNode6});
             this.pnlTitle = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlTitleGradient = new System.Windows.Forms.Panel();
             this.lblVersion = new System.Windows.Forms.Label();
             this.lblAppTitle = new System.Windows.Forms.Label();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.lblCompany = new System.Windows.Forms.Label();
             this.tvwSideMenu = new System.Windows.Forms.TreeView();
             this.imglSideMenu = new System.Windows.Forms.ImageList(this.components);
+            this.pnlModule = new System.Windows.Forms.Panel();
+            this.printerQueueUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.PrinterQueueUserControl();
+            this.sustentantesUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.SustentantesUserControl();
             this.pnlTitle.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnlTitleGradient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
+            this.pnlModule.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTitle
             // 
             this.pnlTitle.BackColor = System.Drawing.SystemColors.Control;
             this.pnlTitle.BackgroundImage = global::Mx.Amib.Sistemas.Credencializacion.Properties.Resources.FondoTitulo;
-            this.pnlTitle.Controls.Add(this.panel1);
+            this.pnlTitle.Controls.Add(this.pnlTitleGradient);
             this.pnlTitle.Controls.Add(this.pbxLogo);
             this.pnlTitle.Controls.Add(this.lblCompany);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
@@ -67,16 +71,16 @@
             this.pnlTitle.Size = new System.Drawing.Size(944, 94);
             this.pnlTitle.TabIndex = 9;
             // 
-            // panel1
+            // pnlTitleGradient
             // 
-            this.panel1.BackgroundImage = global::Mx.Amib.Sistemas.Credencializacion.Properties.Resources.DegradadoTituloAplicacion;
-            this.panel1.Controls.Add(this.lblVersion);
-            this.panel1.Controls.Add(this.lblAppTitle);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 62);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(944, 32);
-            this.panel1.TabIndex = 9;
+            this.pnlTitleGradient.BackgroundImage = global::Mx.Amib.Sistemas.Credencializacion.Properties.Resources.DegradadoTituloAplicacion;
+            this.pnlTitleGradient.Controls.Add(this.lblVersion);
+            this.pnlTitleGradient.Controls.Add(this.lblAppTitle);
+            this.pnlTitleGradient.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlTitleGradient.Location = new System.Drawing.Point(0, 62);
+            this.pnlTitleGradient.Name = "pnlTitleGradient";
+            this.pnlTitleGradient.Size = new System.Drawing.Size(944, 32);
+            this.pnlTitleGradient.TabIndex = 9;
             // 
             // lblVersion
             // 
@@ -133,52 +137,89 @@
             this.tvwSideMenu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tvwSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.tvwSideMenu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tvwSideMenu.HideSelection = false;
             this.tvwSideMenu.ImageIndex = 0;
             this.tvwSideMenu.ImageList = this.imglSideMenu;
             this.tvwSideMenu.Location = new System.Drawing.Point(0, 94);
             this.tvwSideMenu.Name = "tvwSideMenu";
             treeNode1.Name = "nodeSustentante";
+            treeNode1.Tag = "Sustentantes";
             treeNode1.Text = "Búsqueda de Autorizados";
             treeNode2.Name = "nodeCred";
+            treeNode2.Tag = "Default";
             treeNode2.Text = "Credencialización de Autorizados";
             treeNode3.Name = "nodePrinterQueue";
+            treeNode3.Tag = "PrinterQueue";
             treeNode3.Text = "Cola de Trabajo";
             treeNode4.Name = "nodePrinterLogging";
+            treeNode4.Tag = "PrinterLogging";
             treeNode4.Text = "Bitácora de Impresión";
             treeNode5.Name = "nodePrinterConfig";
+            treeNode5.Tag = "PrinterConfig";
             treeNode5.Text = "Configuración de Impresora";
             treeNode6.Name = "nodeTemplateConfig";
+            treeNode6.Tag = "TemplateConfig";
             treeNode6.Text = "Configuración de Plantilla";
             treeNode7.Name = "nodePrinting";
+            treeNode7.Tag = "Default";
             treeNode7.Text = "Gestión de Impresión";
             this.tvwSideMenu.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode2,
             treeNode7});
             this.tvwSideMenu.SelectedImageIndex = 0;
-            this.tvwSideMenu.Size = new System.Drawing.Size(277, 427);
+            this.tvwSideMenu.Size = new System.Drawing.Size(265, 507);
             this.tvwSideMenu.TabIndex = 12;
             this.tvwSideMenu.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvwSideMenu_AfterSelect);
             // 
             // imglSideMenu
             // 
             this.imglSideMenu.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.imglSideMenu.ImageSize = new System.Drawing.Size(32, 32);
+            this.imglSideMenu.ImageSize = new System.Drawing.Size(16, 16);
             this.imglSideMenu.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // pnlModule
+            // 
+            this.pnlModule.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlModule.Controls.Add(this.printerQueueUserControl);
+            this.pnlModule.Controls.Add(this.sustentantesUserControl);
+            this.pnlModule.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlModule.Location = new System.Drawing.Point(265, 94);
+            this.pnlModule.Name = "pnlModule";
+            this.pnlModule.Size = new System.Drawing.Size(679, 507);
+            this.pnlModule.TabIndex = 13;
+            // 
+            // printerQueueUserControl
+            // 
+            this.printerQueueUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.printerQueueUserControl.Location = new System.Drawing.Point(0, 0);
+            this.printerQueueUserControl.Name = "printerQueueUserControl";
+            this.printerQueueUserControl.Size = new System.Drawing.Size(679, 507);
+            this.printerQueueUserControl.TabIndex = 1;
+            // 
+            // sustentantesUserControl
+            // 
+            this.sustentantesUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sustentantesUserControl.Location = new System.Drawing.Point(0, 0);
+            this.sustentantesUserControl.Name = "sustentantesUserControl";
+            this.sustentantesUserControl.Size = new System.Drawing.Size(679, 507);
+            this.sustentantesUserControl.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 521);
+            this.ClientSize = new System.Drawing.Size(944, 601);
+            this.Controls.Add(this.pnlModule);
             this.Controls.Add(this.tvwSideMenu);
             this.Controls.Add(this.pnlTitle);
             this.Name = "MainForm";
             this.Text = "Credencialización";
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlTitleGradient.ResumeLayout(false);
+            this.pnlTitleGradient.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
+            this.pnlModule.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -186,12 +227,15 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlTitle;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlTitleGradient;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Label lblAppTitle;
         private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.Label lblCompany;
         private System.Windows.Forms.TreeView tvwSideMenu;
         private System.Windows.Forms.ImageList imglSideMenu;
+        private System.Windows.Forms.Panel pnlModule;
+        private SustentantesUserControl sustentantesUserControl;
+        private PrinterQueueUserControl printerQueueUserControl;
     }
 }

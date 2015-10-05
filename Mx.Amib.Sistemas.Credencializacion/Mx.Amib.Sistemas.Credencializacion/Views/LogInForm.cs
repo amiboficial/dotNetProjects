@@ -18,6 +18,7 @@ namespace Mx.Amib.Sistemas.Credencializacion.Views
         public LogInForm()
         {
             InitializeComponent();
+            //utiliza el icono del archivo de recursos
             this.Icon = Resources.IconoAplicacion;
 
             //instancía el view model

@@ -35,7 +35,7 @@
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.pnlTitle = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlTitleGradient = new System.Windows.Forms.Panel();
             this.lblVersion = new System.Windows.Forms.Label();
             this.lblAppTitle = new System.Windows.Forms.Label();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
@@ -44,7 +44,7 @@
             this.pbarProc = new System.Windows.Forms.ProgressBar();
             this.lblMessage = new System.Windows.Forms.Label();
             this.pnlTitle.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnlTitleGradient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.pnlState.SuspendLayout();
             this.SuspendLayout();
@@ -117,7 +117,7 @@
             // 
             this.pnlTitle.BackColor = System.Drawing.SystemColors.Control;
             this.pnlTitle.BackgroundImage = global::Mx.Amib.Sistemas.Credencializacion.Properties.Resources.FondoTitulo;
-            this.pnlTitle.Controls.Add(this.panel1);
+            this.pnlTitle.Controls.Add(this.pnlTitleGradient);
             this.pnlTitle.Controls.Add(this.pbxLogo);
             this.pnlTitle.Controls.Add(this.lblCompany);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
@@ -126,16 +126,16 @@
             this.pnlTitle.Size = new System.Drawing.Size(496, 94);
             this.pnlTitle.TabIndex = 8;
             // 
-            // panel1
+            // pnlTitleGradient
             // 
-            this.panel1.BackgroundImage = global::Mx.Amib.Sistemas.Credencializacion.Properties.Resources.DegradadoTituloAplicacion;
-            this.panel1.Controls.Add(this.lblVersion);
-            this.panel1.Controls.Add(this.lblAppTitle);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 62);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(496, 32);
-            this.panel1.TabIndex = 9;
+            this.pnlTitleGradient.BackgroundImage = global::Mx.Amib.Sistemas.Credencializacion.Properties.Resources.DegradadoTituloAplicacion;
+            this.pnlTitleGradient.Controls.Add(this.lblVersion);
+            this.pnlTitleGradient.Controls.Add(this.lblAppTitle);
+            this.pnlTitleGradient.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlTitleGradient.Location = new System.Drawing.Point(0, 62);
+            this.pnlTitleGradient.Name = "pnlTitleGradient";
+            this.pnlTitleGradient.Size = new System.Drawing.Size(496, 32);
+            this.pnlTitleGradient.TabIndex = 9;
             // 
             // lblVersion
             // 
@@ -237,8 +237,8 @@
             this.Text = "Credencialización - Inicio de Sesión";
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlTitleGradient.ResumeLayout(false);
+            this.pnlTitleGradient.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.pnlState.ResumeLayout(false);
             this.pnlState.PerformLayout();
@@ -259,7 +259,7 @@
         private System.Windows.Forms.Label lblCompany;
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.Label lblAppTitle;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlTitleGradient;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Panel pnlState;
         private System.Windows.Forms.Label lblMessage;

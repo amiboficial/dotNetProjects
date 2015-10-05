@@ -64,6 +64,42 @@
     <Compile Include="Views\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\PictureLoadingUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PictureLoadingUserControl.Designer.cs">
+      <DependentUpon>PictureLoadingUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrinterConfigUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PrinterConfigUserControl.Designer.cs">
+      <DependentUpon>PrinterConfigUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrinterLoggingUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PrinterLoggingUserControl.Designer.cs">
+      <DependentUpon>PrinterLoggingUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrinterQueueUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PrinterQueueUserControl.Designer.cs">
+      <DependentUpon>PrinterQueueUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SustentantesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SustentantesUserControl.Designer.cs">
+      <DependentUpon>SustentantesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TemplateConfigUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\TemplateConfigUserControl.Designer.cs">
+      <DependentUpon>TemplateConfigUserControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +115,15 @@
     </Compile>
     <EmbeddedResource Include="Views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PrinterLoggingUserControl.resx">
+      <DependentUpon>PrinterLoggingUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PrinterQueueUserControl.resx">
+      <DependentUpon>PrinterQueueUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SustentantesUserControl.resx">
+      <DependentUpon>SustentantesUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
@@ -123,6 +168,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MenuIconDefault.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuIconPQPause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuIconPQPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuIconPQStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuIconPQTrash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
