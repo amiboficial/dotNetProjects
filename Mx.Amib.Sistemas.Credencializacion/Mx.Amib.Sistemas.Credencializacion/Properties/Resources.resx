@@ -154,8 +154,35 @@
   <data name="FondoTitulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FondoTitulo.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IconBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconFilesave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconFilesave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconFinish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconFinish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconForward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconForward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconGoToPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconGoToPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconIdentity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconIdentity.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="IconoAplicacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconoAplicacion.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconReload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconReload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconStart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconUndo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconUndo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogotipoAmib" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogotipoAmib.jpeg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

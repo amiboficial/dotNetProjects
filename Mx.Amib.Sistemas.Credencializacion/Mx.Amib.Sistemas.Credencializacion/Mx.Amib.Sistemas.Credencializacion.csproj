@@ -125,6 +125,9 @@
     <EmbeddedResource Include="Views\SustentantesUserControl.resx">
       <DependentUpon>SustentantesUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\TemplateConfigUserControl.resx">
+      <DependentUpon>TemplateConfigUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -180,6 +183,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MenuIconPQTrash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconFilesave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconIdentity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconReload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconUndo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconGoToPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconFinish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconBack.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

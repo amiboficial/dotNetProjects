@@ -30,22 +30,20 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.gboxParams = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaAl = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaDel = new System.Windows.Forms.DateTimePicker();
             this.lblMaxResults = new System.Windows.Forms.Label();
             this.nudMaxResults = new System.Windows.Forms.NumericUpDown();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.cbxCritBusq = new System.Windows.Forms.ComboBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblIdSustentante = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblNumeroMatricula = new System.Windows.Forms.Label();
+            this.lblFechaAl = new System.Windows.Forms.Label();
+            this.lblFechaDel = new System.Windows.Forms.Label();
             this.lblCritBusq = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvResults = new System.Windows.Forms.DataGridView();
             this.gboxParams.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMaxResults)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResults)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -62,44 +60,42 @@
             // 
             this.gboxParams.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gboxParams.Controls.Add(this.dateTimePicker2);
-            this.gboxParams.Controls.Add(this.dateTimePicker1);
+            this.gboxParams.Controls.Add(this.dtpFechaAl);
+            this.gboxParams.Controls.Add(this.dtpFechaDel);
             this.gboxParams.Controls.Add(this.lblMaxResults);
             this.gboxParams.Controls.Add(this.nudMaxResults);
             this.gboxParams.Controls.Add(this.btnLimpiar);
             this.gboxParams.Controls.Add(this.btnBuscar);
             this.gboxParams.Controls.Add(this.cbxCritBusq);
-            this.gboxParams.Controls.Add(this.lblNombre);
-            this.gboxParams.Controls.Add(this.lblIdSustentante);
-            this.gboxParams.Controls.Add(this.txtNombre);
-            this.gboxParams.Controls.Add(this.lblNumeroMatricula);
+            this.gboxParams.Controls.Add(this.lblFechaAl);
+            this.gboxParams.Controls.Add(this.lblFechaDel);
             this.gboxParams.Controls.Add(this.lblCritBusq);
             this.gboxParams.Location = new System.Drawing.Point(9, 37);
             this.gboxParams.Name = "gboxParams";
-            this.gboxParams.Size = new System.Drawing.Size(660, 144);
+            this.gboxParams.Size = new System.Drawing.Size(660, 122);
             this.gboxParams.TabIndex = 3;
             this.gboxParams.TabStop = false;
             this.gboxParams.Text = "Parámetros de búsqueda";
             // 
-            // dateTimePicker2
+            // dtpFechaAl
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(150, 62);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(472, 20);
-            this.dateTimePicker2.TabIndex = 21;
+            this.dtpFechaAl.Location = new System.Drawing.Point(150, 62);
+            this.dtpFechaAl.Name = "dtpFechaAl";
+            this.dtpFechaAl.Size = new System.Drawing.Size(277, 20);
+            this.dtpFechaAl.TabIndex = 21;
             // 
-            // dateTimePicker1
+            // dtpFechaDel
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(150, 40);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(472, 20);
-            this.dateTimePicker1.TabIndex = 20;
+            this.dtpFechaDel.Location = new System.Drawing.Point(150, 40);
+            this.dtpFechaDel.Name = "dtpFechaDel";
+            this.dtpFechaDel.Size = new System.Drawing.Size(277, 20);
+            this.dtpFechaDel.TabIndex = 20;
             // 
             // lblMaxResults
             // 
             this.lblMaxResults.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMaxResults.AutoSize = true;
-            this.lblMaxResults.Location = new System.Drawing.Point(255, 115);
+            this.lblMaxResults.Location = new System.Drawing.Point(255, 93);
             this.lblMaxResults.Name = "lblMaxResults";
             this.lblMaxResults.Size = new System.Drawing.Size(113, 13);
             this.lblMaxResults.TabIndex = 19;
@@ -108,7 +104,7 @@
             // nudMaxResults
             // 
             this.nudMaxResults.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudMaxResults.Location = new System.Drawing.Point(371, 112);
+            this.nudMaxResults.Location = new System.Drawing.Point(371, 90);
             this.nudMaxResults.Minimum = new decimal(new int[] {
             10,
             0,
@@ -126,7 +122,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLimpiar.Location = new System.Drawing.Point(433, 110);
+            this.btnLimpiar.Location = new System.Drawing.Point(433, 88);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(108, 23);
             this.btnLimpiar.TabIndex = 18;
@@ -136,7 +132,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBuscar.Location = new System.Drawing.Point(547, 110);
+            this.btnBuscar.Location = new System.Drawing.Point(547, 88);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 17;
@@ -153,41 +149,23 @@
             this.cbxCritBusq.Size = new System.Drawing.Size(472, 21);
             this.cbxCritBusq.TabIndex = 16;
             // 
-            // lblNombre
+            // lblFechaAl
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(100, 87);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(44, 13);
-            this.lblNombre.TabIndex = 9;
-            this.lblNombre.Text = "Nombre";
+            this.lblFechaAl.AutoSize = true;
+            this.lblFechaAl.Location = new System.Drawing.Point(128, 65);
+            this.lblFechaAl.Name = "lblFechaAl";
+            this.lblFechaAl.Size = new System.Drawing.Size(16, 13);
+            this.lblFechaAl.TabIndex = 8;
+            this.lblFechaAl.Text = "Al";
             // 
-            // lblIdSustentante
+            // lblFechaDel
             // 
-            this.lblIdSustentante.AutoSize = true;
-            this.lblIdSustentante.Location = new System.Drawing.Point(128, 65);
-            this.lblIdSustentante.Name = "lblIdSustentante";
-            this.lblIdSustentante.Size = new System.Drawing.Size(16, 13);
-            this.lblIdSustentante.TabIndex = 8;
-            this.lblIdSustentante.Text = "Al";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(150, 84);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(472, 20);
-            this.txtNombre.TabIndex = 5;
-            // 
-            // lblNumeroMatricula
-            // 
-            this.lblNumeroMatricula.AutoSize = true;
-            this.lblNumeroMatricula.Location = new System.Drawing.Point(121, 43);
-            this.lblNumeroMatricula.Name = "lblNumeroMatricula";
-            this.lblNumeroMatricula.Size = new System.Drawing.Size(23, 13);
-            this.lblNumeroMatricula.TabIndex = 1;
-            this.lblNumeroMatricula.Text = "Del";
+            this.lblFechaDel.AutoSize = true;
+            this.lblFechaDel.Location = new System.Drawing.Point(121, 43);
+            this.lblFechaDel.Name = "lblFechaDel";
+            this.lblFechaDel.Size = new System.Drawing.Size(23, 13);
+            this.lblFechaDel.TabIndex = 1;
+            this.lblFechaDel.Text = "Del";
             // 
             // lblCritBusq
             // 
@@ -198,19 +176,22 @@
             this.lblCritBusq.TabIndex = 0;
             this.lblCritBusq.Text = "Criterio de búsqueda";
             // 
-            // dataGridView1
+            // dgvResults
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 187);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(660, 307);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvResults.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResults.Location = new System.Drawing.Point(9, 165);
+            this.dgvResults.Name = "dgvResults";
+            this.dgvResults.Size = new System.Drawing.Size(660, 307);
+            this.dgvResults.TabIndex = 4;
             // 
             // PrinterLoggingUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvResults);
             this.Controls.Add(this.gboxParams);
             this.Controls.Add(this.lblTitle);
             this.Name = "PrinterLoggingUserControl";
@@ -218,7 +199,7 @@
             this.gboxParams.ResumeLayout(false);
             this.gboxParams.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMaxResults)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResults)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,18 +209,16 @@
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.GroupBox gboxParams;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechaAl;
+        private System.Windows.Forms.DateTimePicker dtpFechaDel;
         private System.Windows.Forms.Label lblMaxResults;
         private System.Windows.Forms.NumericUpDown nudMaxResults;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.ComboBox cbxCritBusq;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblIdSustentante;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lblNumeroMatricula;
+        private System.Windows.Forms.Label lblFechaAl;
+        private System.Windows.Forms.Label lblFechaDel;
         private System.Windows.Forms.Label lblCritBusq;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvResults;
     }
 }

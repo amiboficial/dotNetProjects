@@ -50,8 +50,10 @@
             this.tvwSideMenu = new System.Windows.Forms.TreeView();
             this.imglSideMenu = new System.Windows.Forms.ImageList(this.components);
             this.pnlModule = new System.Windows.Forms.Panel();
+            this.printerLoggingUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.PrinterLoggingUserControl();
             this.printerQueueUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.PrinterQueueUserControl();
             this.sustentantesUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.SustentantesUserControl();
+            this.templateConfigUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.TemplateConfigUserControl();
             this.pnlTitle.SuspendLayout();
             this.pnlTitleGradient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
@@ -180,6 +182,8 @@
             // pnlModule
             // 
             this.pnlModule.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlModule.Controls.Add(this.templateConfigUserControl);
+            this.pnlModule.Controls.Add(this.printerLoggingUserControl);
             this.pnlModule.Controls.Add(this.printerQueueUserControl);
             this.pnlModule.Controls.Add(this.sustentantesUserControl);
             this.pnlModule.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -187,6 +191,14 @@
             this.pnlModule.Name = "pnlModule";
             this.pnlModule.Size = new System.Drawing.Size(679, 507);
             this.pnlModule.TabIndex = 13;
+            // 
+            // printerLoggingUserControl
+            // 
+            this.printerLoggingUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.printerLoggingUserControl.Location = new System.Drawing.Point(0, 0);
+            this.printerLoggingUserControl.Name = "printerLoggingUserControl";
+            this.printerLoggingUserControl.Size = new System.Drawing.Size(679, 507);
+            this.printerLoggingUserControl.TabIndex = 2;
             // 
             // printerQueueUserControl
             // 
@@ -203,6 +215,14 @@
             this.sustentantesUserControl.Name = "sustentantesUserControl";
             this.sustentantesUserControl.Size = new System.Drawing.Size(679, 507);
             this.sustentantesUserControl.TabIndex = 0;
+            // 
+            // templateConfigUserControl
+            // 
+            this.templateConfigUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.templateConfigUserControl.Location = new System.Drawing.Point(0, 0);
+            this.templateConfigUserControl.Name = "templateConfigUserControl";
+            this.templateConfigUserControl.Size = new System.Drawing.Size(679, 507);
+            this.templateConfigUserControl.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -237,5 +257,7 @@
         private System.Windows.Forms.Panel pnlModule;
         private SustentantesUserControl sustentantesUserControl;
         private PrinterQueueUserControl printerQueueUserControl;
+        private PrinterLoggingUserControl printerLoggingUserControl;
+        private TemplateConfigUserControl templateConfigUserControl;
     }
 }

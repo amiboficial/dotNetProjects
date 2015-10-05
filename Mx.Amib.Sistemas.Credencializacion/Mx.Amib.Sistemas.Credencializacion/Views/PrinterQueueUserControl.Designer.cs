@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.lblTitle = new System.Windows.Forms.Label();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tspTools = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.toolStrip1.SuspendLayout();
+            this.tspTools.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,21 +50,21 @@
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Cola de trabajo";
             // 
-            // toolStrip1
+            // tspTools
             // 
-            this.toolStrip1.AutoSize = false;
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tspTools.AutoSize = false;
+            this.tspTools.Dock = System.Windows.Forms.DockStyle.None;
+            this.tspTools.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton2,
             this.toolStripButton3,
             this.toolStripSeparator1,
             this.toolStripSplitButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(10, 39);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(372, 25);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
+            this.tspTools.Location = new System.Drawing.Point(10, 39);
+            this.tspTools.Name = "tspTools";
+            this.tspTools.Size = new System.Drawing.Size(651, 25);
+            this.tspTools.TabIndex = 2;
+            this.tspTools.Text = "toolStrip1";
             // 
             // toolStripButton1
             // 
@@ -123,12 +123,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.tspTools);
             this.Controls.Add(this.lblTitle);
             this.Name = "PrinterQueueUserControl";
             this.Size = new System.Drawing.Size(679, 507);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.tspTools.ResumeLayout(false);
+            this.tspTools.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,7 +138,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip tspTools;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
