@@ -183,6 +183,16 @@ namespace Mx.Amib.Sistemas.Credencializacion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap IconCritical {
+            get {
+                object obj = ResourceManager.GetObject("IconCritical", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap IconFilesave {
             get {
                 object obj = ResourceManager.GetObject("IconFilesave", resourceCulture);
@@ -231,6 +241,16 @@ namespace Mx.Amib.Sistemas.Credencializacion.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap IconInfo {
+            get {
+                object obj = ResourceManager.GetObject("IconInfo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         public static System.Drawing.Icon IconoAplicacion {
@@ -266,6 +286,16 @@ namespace Mx.Amib.Sistemas.Credencializacion.Properties {
         public static System.Drawing.Bitmap IconUndo {
             get {
                 object obj = ResourceManager.GetObject("IconUndo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap IconWarning {
+            get {
+                object obj = ResourceManager.GetObject("IconWarning", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

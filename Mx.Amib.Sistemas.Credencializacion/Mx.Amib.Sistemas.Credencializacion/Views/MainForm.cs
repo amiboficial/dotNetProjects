@@ -50,6 +50,7 @@ namespace Mx.Amib.Sistemas.Credencializacion.Views
             this.printerQueueUserControl.Visible = false;
             this.printerLoggingUserControl.Visible = false;
             this.templateConfigUserControl.Visible = false;
+            this.printerConfigUserControl.Visible = false;
 
             if (selectedMenu == "Sustentantes")
             {
@@ -66,6 +67,10 @@ namespace Mx.Amib.Sistemas.Credencializacion.Views
             else if (selectedMenu == "TemplateConfig")
             {
                 this.templateConfigUserControl.Visible = true;
+            }
+            else if (selectedMenu == "PrinterConfig")
+            {
+                this.printerConfigUserControl.Visible = true;
             }
         }
     }

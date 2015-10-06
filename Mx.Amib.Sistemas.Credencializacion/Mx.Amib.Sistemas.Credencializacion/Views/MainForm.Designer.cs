@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Búsqueda de Autorizados");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Credencialización de Autorizados", new System.Windows.Forms.TreeNode[] {
-            treeNode1});
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Cola de Trabajo");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Bitácora de Impresión");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Configuración de Impresora");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Configuración de Plantilla");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Gestión de Impresión", new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6});
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Búsqueda de Autorizados");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Credencialización de Autorizados", new System.Windows.Forms.TreeNode[] {
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Cola de Trabajo");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Bitácora de Impresión");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Configuración de Impresora");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Configuración de Plantilla");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Gestión de Impresión", new System.Windows.Forms.TreeNode[] {
+            treeNode10,
+            treeNode11,
+            treeNode12,
+            treeNode13});
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.pnlTitleGradient = new System.Windows.Forms.Panel();
             this.lblVersion = new System.Windows.Forms.Label();
@@ -50,10 +50,11 @@
             this.tvwSideMenu = new System.Windows.Forms.TreeView();
             this.imglSideMenu = new System.Windows.Forms.ImageList(this.components);
             this.pnlModule = new System.Windows.Forms.Panel();
+            this.printerConfigUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.PrinterConfigUserControl();
+            this.templateConfigUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.TemplateConfigUserControl();
             this.printerLoggingUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.PrinterLoggingUserControl();
             this.printerQueueUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.PrinterQueueUserControl();
             this.sustentantesUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.SustentantesUserControl();
-            this.templateConfigUserControl = new Mx.Amib.Sistemas.Credencializacion.Views.TemplateConfigUserControl();
             this.pnlTitle.SuspendLayout();
             this.pnlTitleGradient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
@@ -144,30 +145,30 @@
             this.tvwSideMenu.ImageList = this.imglSideMenu;
             this.tvwSideMenu.Location = new System.Drawing.Point(0, 94);
             this.tvwSideMenu.Name = "tvwSideMenu";
-            treeNode1.Name = "nodeSustentante";
-            treeNode1.Tag = "Sustentantes";
-            treeNode1.Text = "Búsqueda de Autorizados";
-            treeNode2.Name = "nodeCred";
-            treeNode2.Tag = "Default";
-            treeNode2.Text = "Credencialización de Autorizados";
-            treeNode3.Name = "nodePrinterQueue";
-            treeNode3.Tag = "PrinterQueue";
-            treeNode3.Text = "Cola de Trabajo";
-            treeNode4.Name = "nodePrinterLogging";
-            treeNode4.Tag = "PrinterLogging";
-            treeNode4.Text = "Bitácora de Impresión";
-            treeNode5.Name = "nodePrinterConfig";
-            treeNode5.Tag = "PrinterConfig";
-            treeNode5.Text = "Configuración de Impresora";
-            treeNode6.Name = "nodeTemplateConfig";
-            treeNode6.Tag = "TemplateConfig";
-            treeNode6.Text = "Configuración de Plantilla";
-            treeNode7.Name = "nodePrinting";
-            treeNode7.Tag = "Default";
-            treeNode7.Text = "Gestión de Impresión";
+            treeNode8.Name = "nodeSustentante";
+            treeNode8.Tag = "Sustentantes";
+            treeNode8.Text = "Búsqueda de Autorizados";
+            treeNode9.Name = "nodeCred";
+            treeNode9.Tag = "Default";
+            treeNode9.Text = "Credencialización de Autorizados";
+            treeNode10.Name = "nodePrinterQueue";
+            treeNode10.Tag = "PrinterQueue";
+            treeNode10.Text = "Cola de Trabajo";
+            treeNode11.Name = "nodePrinterLogging";
+            treeNode11.Tag = "PrinterLogging";
+            treeNode11.Text = "Bitácora de Impresión";
+            treeNode12.Name = "nodePrinterConfig";
+            treeNode12.Tag = "PrinterConfig";
+            treeNode12.Text = "Configuración de Impresora";
+            treeNode13.Name = "nodeTemplateConfig";
+            treeNode13.Tag = "TemplateConfig";
+            treeNode13.Text = "Configuración de Plantilla";
+            treeNode14.Name = "nodePrinting";
+            treeNode14.Tag = "Default";
+            treeNode14.Text = "Gestión de Impresión";
             this.tvwSideMenu.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2,
-            treeNode7});
+            treeNode9,
+            treeNode14});
             this.tvwSideMenu.SelectedImageIndex = 0;
             this.tvwSideMenu.Size = new System.Drawing.Size(265, 507);
             this.tvwSideMenu.TabIndex = 12;
@@ -182,6 +183,7 @@
             // pnlModule
             // 
             this.pnlModule.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlModule.Controls.Add(this.printerConfigUserControl);
             this.pnlModule.Controls.Add(this.templateConfigUserControl);
             this.pnlModule.Controls.Add(this.printerLoggingUserControl);
             this.pnlModule.Controls.Add(this.printerQueueUserControl);
@@ -191,6 +193,22 @@
             this.pnlModule.Name = "pnlModule";
             this.pnlModule.Size = new System.Drawing.Size(679, 507);
             this.pnlModule.TabIndex = 13;
+            // 
+            // printerConfigUserControl
+            // 
+            this.printerConfigUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.printerConfigUserControl.Location = new System.Drawing.Point(0, 0);
+            this.printerConfigUserControl.Name = "printerConfigUserControl";
+            this.printerConfigUserControl.Size = new System.Drawing.Size(679, 507);
+            this.printerConfigUserControl.TabIndex = 4;
+            // 
+            // templateConfigUserControl
+            // 
+            this.templateConfigUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.templateConfigUserControl.Location = new System.Drawing.Point(0, 0);
+            this.templateConfigUserControl.Name = "templateConfigUserControl";
+            this.templateConfigUserControl.Size = new System.Drawing.Size(679, 507);
+            this.templateConfigUserControl.TabIndex = 3;
             // 
             // printerLoggingUserControl
             // 
@@ -215,14 +233,6 @@
             this.sustentantesUserControl.Name = "sustentantesUserControl";
             this.sustentantesUserControl.Size = new System.Drawing.Size(679, 507);
             this.sustentantesUserControl.TabIndex = 0;
-            // 
-            // templateConfigUserControl
-            // 
-            this.templateConfigUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.templateConfigUserControl.Location = new System.Drawing.Point(0, 0);
-            this.templateConfigUserControl.Name = "templateConfigUserControl";
-            this.templateConfigUserControl.Size = new System.Drawing.Size(679, 507);
-            this.templateConfigUserControl.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -259,5 +269,6 @@
         private PrinterQueueUserControl printerQueueUserControl;
         private PrinterLoggingUserControl printerLoggingUserControl;
         private TemplateConfigUserControl templateConfigUserControl;
+        private PrinterConfigUserControl printerConfigUserControl;
     }
 }

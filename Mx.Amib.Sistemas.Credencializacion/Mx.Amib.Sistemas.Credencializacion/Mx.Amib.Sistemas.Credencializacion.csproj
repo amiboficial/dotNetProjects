@@ -52,6 +52,13 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\LogInViewModel.cs" />
+    <Compile Include="ViewModels\PrinterConfigViewModel.cs" />
+    <Compile Include="Views\FilePrinterConfigUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FilePrinterConfigUserControl.Designer.cs">
+      <DependentUpon>FilePrinterConfigUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +107,15 @@
     <Compile Include="Views\TemplateConfigUserControl.Designer.cs">
       <DependentUpon>TemplateConfigUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Zebra8PrinterConfigUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Zebra8PrinterConfigUserControl.Designer.cs">
+      <DependentUpon>Zebra8PrinterConfigUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\FilePrinterConfigUserControl.resx">
+      <DependentUpon>FilePrinterConfigUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +132,9 @@
     <EmbeddedResource Include="Views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\PrinterConfigUserControl.resx">
+      <DependentUpon>PrinterConfigUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\PrinterLoggingUserControl.resx">
       <DependentUpon>PrinterLoggingUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TemplateConfigUserControl.resx">
       <DependentUpon>TemplateConfigUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Zebra8PrinterConfigUserControl.resx">
+      <DependentUpon>Zebra8PrinterConfigUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
