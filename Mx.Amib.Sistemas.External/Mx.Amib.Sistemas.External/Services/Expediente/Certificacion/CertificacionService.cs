@@ -12,33 +12,48 @@ namespace Mx.Amib.Sistemas.External.Expediente.Certificacion.Service
 {
     public class CertificacionService
     {
+        private static readonly object syncLock = new object();
+        private static CertificacionService _instance;
+
+        public string BaseUrl { get; set; }
+        public string FindAllCandidatoCredencialUrl { get; set; }
+        public string FindAllCandidatoCredencialByFolioUrl { get; set; }
+        public string FindAllCandidatoCredencialByMatriculaUrl { get; set; }
+
+        private static CertificacionService()
+        {
+        }
+
+        public static CertificacionService GetInstance(){
+            lock (syncLock)
+            {
+                if(CertificacionService._instance == null)
+                    CertificacionService._instance = new CertificacionService();
+            
+                return CertificacionService._instance;
+            }
+        }
+
         public CertificacionServiceResult FindAllCandidatoCredencial(int max, int offset, string sort, string order, string nom, string ap1, string ap2, long idfig, long idvarfig)
         {
+            /*
             ResourceManager appUrlsRm = new ResourceManager("Mx.Amib.Sistemas.External.Resources.ApplicationUrls", typeof(ApplicationUrls).Assembly);
             string curEnv = appUrlsRm.GetString("CurrentEnvironment");
             string baseUrl = appUrlsRm.GetString("Expediente"+curEnv);
             string requestUrl = ExpedienteUrls.Certificacion_Certificacion_FindAllCandidatoCredencial;
             string queryStr = String.Format("?max={0}&offset={1}&sort={2}&order={3}&nom={4}&ap1={5}&ap2={6}&idfig={7}&idvarfig={8}", max, offset, sort, order, nom, ap1, ap2, idfig, idvarfig);
-
             return JsonRestClientHelper.Get<CertificacionServiceResult>(baseUrl, requestUrl + queryStr);
+            */
+
+            return JsonRestClientHelper.Get<CertificacionServiceResult>(BaseUrl, FindAllCandidatoCredencialUrl);
         }
         public CertificacionServiceResult FindAllCandidatoCredencialByFolio(long idSustentante)
         {
-            ResourceManager appUrlsRm = new ResourceManager("Mx.Amib.Sistemas.External.Resources.ApplicationUrls", typeof(ApplicationUrls).Assembly);
-            string curEnv = appUrlsRm.GetString("CurrentEnvironment");
-            string baseUrl = appUrlsRm.GetString("Expediente" + curEnv);
-            string requestUrl = ExpedienteUrls.Certificacion_Certificacion_FindAllCandidatoCredencialByFolio;
-
-            return JsonRestClientHelper.Get<CertificacionServiceResult>(baseUrl, requestUrl + '/' + idSustentante);
+            return JsonRestClientHelper.Get<CertificacionServiceResult>(BaseUrl, FindAllCandidatoCredencialByFolioUrl);
         }
         public CertificacionServiceResult FindAllCandidatoCredencialByMatricula(int numeroMatricula)
         {
-            ResourceManager appUrlsRm = new ResourceManager("Mx.Amib.Sistemas.External.Resources.ApplicationUrls", typeof(ApplicationUrls).Assembly);
-            string curEnv = appUrlsRm.GetString("CurrentEnvironment");
-            string baseUrl = appUrlsRm.GetString("Expediente" + curEnv);
-            string requestUrl = ExpedienteUrls.Certificacion_Certificacion_FindAllCandidatoCredencialByMatricula;
-
-            return JsonRestClientHelper.Get<CertificacionServiceResult>(baseUrl, requestUrl + '/' + numeroMatricula);
+            return JsonRestClientHelper.Get<CertificacionServiceResult>(BaseUrl, FindAllCandidatoCredencialByMatriculaUrl);
         }
     }
 
