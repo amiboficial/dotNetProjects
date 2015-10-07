@@ -28,49 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblFolder = new System.Windows.Forms.Label();
-            this.txtFolder = new System.Windows.Forms.TextBox();
-            this.btnBrowseFolder = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.lblPath = new System.Windows.Forms.Label();
+            this.txtPath = new System.Windows.Forms.TextBox();
+            this.btnBrowsePath = new System.Windows.Forms.Button();
+            this.cbxSetDefaultPath = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
-            // lblFolder
+            // lblPath
             // 
-            this.lblFolder.AutoSize = true;
-            this.lblFolder.Location = new System.Drawing.Point(53, 11);
-            this.lblFolder.Name = "lblFolder";
-            this.lblFolder.Size = new System.Drawing.Size(98, 13);
-            this.lblFolder.TabIndex = 0;
-            this.lblFolder.Text = "Carpeta de guardar";
+            this.lblPath.AutoSize = true;
+            this.lblPath.Location = new System.Drawing.Point(53, 11);
+            this.lblPath.Name = "lblPath";
+            this.lblPath.Size = new System.Drawing.Size(98, 13);
+            this.lblPath.TabIndex = 0;
+            this.lblPath.Text = "Carpeta de guardar";
             // 
-            // txtFolder
+            // txtPath
             // 
-            this.txtFolder.Location = new System.Drawing.Point(244, 8);
-            this.txtFolder.Name = "txtFolder";
-            this.txtFolder.Size = new System.Drawing.Size(384, 20);
-            this.txtFolder.TabIndex = 1;
+            this.txtPath.Location = new System.Drawing.Point(244, 8);
+            this.txtPath.Name = "txtPath";
+            this.txtPath.Size = new System.Drawing.Size(384, 20);
+            this.txtPath.TabIndex = 1;
             // 
-            // btnBrowseFolder
+            // btnBrowsePath
             // 
-            this.btnBrowseFolder.Location = new System.Drawing.Point(163, 6);
-            this.btnBrowseFolder.Name = "btnBrowseFolder";
-            this.btnBrowseFolder.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseFolder.TabIndex = 2;
-            this.btnBrowseFolder.Text = "Examinar...";
-            this.btnBrowseFolder.UseVisualStyleBackColor = true;
-            this.btnBrowseFolder.Click += new System.EventHandler(this.button1_Click);
+            this.btnBrowsePath.Location = new System.Drawing.Point(163, 6);
+            this.btnBrowsePath.Name = "btnBrowsePath";
+            this.btnBrowsePath.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowsePath.TabIndex = 2;
+            this.btnBrowsePath.Text = "Examinar...";
+            this.btnBrowsePath.UseVisualStyleBackColor = true;
+            this.btnBrowsePath.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox1
+            // cbxSetDefaultPath
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(163, 35);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(405, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Establecer como impresora de credenciales predeterminada para esta aplicación";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbxSetDefaultPath.AutoSize = true;
+            this.cbxSetDefaultPath.Location = new System.Drawing.Point(163, 35);
+            this.cbxSetDefaultPath.Name = "cbxSetDefaultPath";
+            this.cbxSetDefaultPath.Size = new System.Drawing.Size(405, 17);
+            this.cbxSetDefaultPath.TabIndex = 3;
+            this.cbxSetDefaultPath.Text = "Establecer como impresora de credenciales predeterminada para esta aplicación";
+            this.cbxSetDefaultPath.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -96,10 +97,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.btnBrowseFolder);
-            this.Controls.Add(this.txtFolder);
-            this.Controls.Add(this.lblFolder);
+            this.Controls.Add(this.cbxSetDefaultPath);
+            this.Controls.Add(this.btnBrowsePath);
+            this.Controls.Add(this.txtPath);
+            this.Controls.Add(this.lblPath);
             this.Name = "FilePrinterConfigUserControl";
             this.Size = new System.Drawing.Size(646, 366);
             this.Load += new System.EventHandler(this.FilePrinterConfigUserControl_Load);
@@ -110,11 +111,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblFolder;
-        private System.Windows.Forms.TextBox txtFolder;
-        private System.Windows.Forms.Button btnBrowseFolder;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label lblPath;
+        private System.Windows.Forms.TextBox txtPath;
+        private System.Windows.Forms.Button btnBrowsePath;
+        private System.Windows.Forms.CheckBox cbxSetDefaultPath;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
     }
 }
